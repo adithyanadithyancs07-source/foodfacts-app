@@ -1,16 +1,74 @@
-# React + Vite
+# 🥗 FoodFacts App (Part 1)
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## 📌 What I built
 
-Currently, two official plugins are available:
+A React app that allows users to search for food items and view their nutrition information using a live API.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+## 🚀 Features
 
-## React Compiler
+* Search for any food (banana, milk, oats, etc.)
+* Display results as cards
+* Shows:
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+  * Product name
+  * Brand
+  * Calories, Protein, Carbs, Fat
+  * Product image (with fallback)
+* Loading state while fetching data
+* Empty state before search
+* No-results state when nothing found
 
-## Expanding the ESLint configuration
+## 🧠 Concepts Learned
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+* JSX
+* Functional Components
+* Props
+* useState Hook
+* Event Handling
+* Controlled Inputs
+* List Rendering with `.map()`
+* Fetch API (with async/await)
+* Conditional Rendering
+
+## ▶️ How to Run
+
+```bash
+npm install
+npm run dev
+```
+
+## 📸 Screenshots
+
+(Add screenshots here)
+
+## ⚠️ Challenges Faced
+
+* CORS error while fetching API
+* Handling missing images and data
+* Fixing component export/import errors
+
+## ❓ Questions
+
+* How to handle APIs securely without CORS issues?
+* How to improve UI design further?
+
+## 📂 Project Structure
+
+```
+src/
+ ├── components/
+ │   ├── SearchBar.jsx
+ │   ├── FoodCard.jsx
+ │   └── FoodList.jsx
+ ├── App.jsx
+ └── main.jsx
+```
+
+---
+
+## 🙌 Final Status
+
+✅ App is working
+✅ Search functionality implemented
+✅ UI states handled
+Final submission for Part 1
